@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>Cloud Session Backup</title>
+  <style>
+    body { font-family: sans-serif; width: 220px; padding: 10px; background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2.bp.blogspot.com%2F-Is0E3eZR66A%2FU_VeyM8MP2I%2FAAAAAAAAINM%2Fu0T33Rj2ivw%2Fs1600%2Ftumblr_m6fjc7AzVI1qg39ewo1_500.gif&f=1&nofb=1&ipt=3b441025382b42c65bccda7604582b7e21b1fb50fd4483a23ad82df859346b85");}
+    button { width: 100%; margin: 5px 0; padding: 8px; }
+    button:hover {background-color: grey; color: purple; border-color: red; border width: 2px border-radius: 10px 10px 10px 10px; border-style: dotted;}
+    
+    .gradient-text {
+    /* Font styling */
+
+
+    /* 1. Create the gradient background */
+    background: linear-gradient(
+      to right,
+      #000 20%,  /* Black */
+      #fff 50%,  /* White */
+      #000 80%   /* Black */
+    );
+    background-size: 200% auto; /* Make the background twice as wide */
+
+    /* 2. Clip the background to the text */
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* 3. Make the text color transparent */
+    -webkit-text-fill-color: transparent;
+
+    /* 4. Animate the background position */
+    animation: shine 1.2s linear infinite;
+  }
+
+  /* Keyframe animation */
+  @keyframes shine {
+    to {
+      background-position: 200% center; /* Move background to the right */
+    }
+  }
+    
+  </style>
+</head>
+<body>
+  <h3 class="gradient-text" >Session Backup</h3>
+  <button id="login">🔑 Login Google Drive</button>
+  <button id="backup">⬆️ Backup to Drive</button>
+  <button id="restore">⬇️ Restore (soon)</button>
+  <script src="popup.js"></script>
+</body>
+</html>

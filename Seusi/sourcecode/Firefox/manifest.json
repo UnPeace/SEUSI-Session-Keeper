@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Cloud Session Backup",
+  "version": "1.1",
+  "description": "Backup and restore cookies + storage across browsers with Google Drive sync",
+  "permissions": [
+    "cookies",
+    "storage",
+    "downloads",
+    "tabs",
+    "identity",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "oauth2": {
+    "client_id": "143594037740-80egr34dcshqjs82123dvja6utms6bsk.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive.file"
+    ]
+  }
+}
