@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "public/**/*.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/oauth-redirect", "dest": "/public/oauth-redirect.html" }
+  ]
+}

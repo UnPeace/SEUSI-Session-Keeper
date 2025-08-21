@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OAuth Redirect</title>
+</head>
+<body>
+<script>
+  // Google sends access_token in URL fragment (#access_token=...)
+  const params = new URLSearchParams(window.location.hash.substring(1));
+  const token = params.get('access_token');
+
+  if (token) {
+    // Send token back to extension via window.postMessage
+    window.opener.postMessage({ type: 'oauth-token', token }, '*');
+    window.close();
+  } else {
+    document.body.innerText = 'Login failed';
+  }
+</script>
+</body>
+</html>
