@@ -1,8 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Cloud Session Backup",
-  "version": "0.5",
-  "description": "Backup and restore cookies + storage across browsers with Google Drive sync",
+  "name": "Seusi Session Keeper",
+  "version": "1.0",
+  "description": "It's a maid that will keep your browsing data and serve back to its master.",
+  "icons": {
+  "48": "icon-48.png"
+  },
   "permissions": [
     "cookies",
     "storage",
